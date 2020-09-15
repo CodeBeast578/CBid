@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pro Land Project Fresh</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+  <div id="home"></div>
+  <header id="header">
+    <div class="logo">
+      <img id="header-img" src="https://cdn.worldvectorlogo.com/logos/xbox-one-2.svg" alt="xbox one logo">
+    </div>
+    <nav id="nav-bar">
+      <ul>
+        <li><a id="selected" class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#features">Features</a></li>
+        <li><a class="nav-link" href="#models">Models</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="vid">
+    <section class="trailer">
+      <iframe id="video" src="https://www.youtube.com/embed/0tUqIHwHDEc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+  </div>
+  <section id="frm">
+    <h1> Register for Assistance</h1>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <input type="email" id="email" name="email" placeholder="Enter Your Email">
+      <br>
+      <input id="submit" type="submit" href="https://www.freecodecamp.com/email-submit" value="Register Now" class="btn" />
+    </form>
+  </section>
+  <div id="features">
+    <div id="ft1">
+      <img src="https://www.svgrepo.com/show/103545/voice-recorder-microphone.svg" alt="voice pic" id="voice">
+      <h2>You Can Control Your Console-TV With Your Voice--So Relax!!</h2>
+    </div>
+    <div id="ft1">
+      <img src="https://cdn.onlinewebfonts.com/svg/img_429925.png" alt="stream icon" id="stream">
+      <h2>Stream Your Gameplay On Your Windows Pc.</h2>
+    </div>
+    <div id="ft1">
+      <img src="data:image/png;base64,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" alt="space" id="space">
+      <h2>It Has A huge SSD of 1TB With Additional Room For storage.It Also Supports External Drives.</h2>
+    </div>
+  </div>
+  <div class="models" id="models">
+    <div class="series">
+      <div id="head">
+        <h2>Xbox One S</h2>
+      </div>
+      <h3>$479.76</h3>
+      <button type="submit" class="btn">GET</button>
+    </div>
+    <div class="series">
+      <div id="head">
+        <h2>Xbox One X</h2>
+      </div>
+      <h3>$499</h3>
+      <button type="submit" class="btn">GET</button>
+    </div>
+    <div class="series">
+      <div id="head">
+        <h2>Xbox Series X</h2>
+      </div>
+      <h3>$499</h3>
+      <button type="submit" class="btn">GET</button>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; Copyright 2020,Xbox One<p>
+  </footer>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
